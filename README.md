@@ -17,6 +17,7 @@ You can install Bundler and Jekyll by running:
 ## Clone the Repository
 If you haven’t already, clone the repository:
 `git clone https://github.com/mms-fcul/mms-wiki.git`
+
 `cd mms-wiki`
 
 ### Install Dependencies
@@ -35,7 +36,9 @@ Once running, open this URL in your browser:
 
 ### Committing and Pushing Changes
 `git add .`
+
 `git commit -m "Describe your changes here"`
+
 `git push origin main`
 The last command will prompt you to insert credentials, you must insert your personal username and password or token (you can generate a personal toke by going to Settings > Developer settings > Personal access tokens → Tokens (classic) > Generate new token → Generate new token (classic))
 
