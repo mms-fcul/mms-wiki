@@ -1,0 +1,41 @@
+/* Header layout */
+.site-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav .page-link {
+  text-decoration: none;
+  color: #007acc;
+}
+
+.site-nav .page-link:hover {
+  text-decoration: underline;
+}
+
+.home .posts {
+  display: none;
+}

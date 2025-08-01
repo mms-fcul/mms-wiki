@@ -1,0 +1,17 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      {{ site.title | escape }}
+    </a>
+
+    {%- if site.header_pages -%}
+      <nav class="site-nav">
+        <div class="trigger">
+          {%- for nav_item in site.header_pages -%}
+            <a class="page-link" href="{{ nav_item.url | relative_url }}">{{ nav_item.title }}</a>
+          {%- endfor -%}
+        </div>
+      </nav>
+    {%- endif -%}
+  </div>
+</header>
