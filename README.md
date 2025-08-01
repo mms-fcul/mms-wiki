@@ -46,7 +46,7 @@ If you want to edit or expand on the pages that already exist, simply edit them 
 
 If you want to create a new page, create a newpage.md file within the adequate folder ( `/new-to-mms/`, `/programs-and-tool/`, `/tutorials/` or `/useful-info/`), and use the template header:
 
-```yaml
+```
 ---
 layout: page
 title: Example title
