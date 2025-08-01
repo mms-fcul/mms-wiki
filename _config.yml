@@ -21,7 +21,7 @@
 title: MMS Wiki
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation and internal knowledge base for MMS-FCUL
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/mms-wiki" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author: MMS-FCUL
 
