@@ -5,7 +5,7 @@ permalink: /about/
 ---
 The Molecular Modeling and Simulation (MMS) Lab is composed of several groups pushing the boundaries of several reaserch topics.
 
-**[Machuqueiro Computational BiopHysics Lab](https://mms.rd.ciencias.ulisboa.pt/index.html)** - lead by **Miguel Machuqueiro** focuses on studying the pH effects on biologically relevant molecules.
+**[Computational BiopHysics Lab](https://mms.rd.ciencias.ulisboa.pt/index.html)** - lead by **Miguel Machuqueiro** focuses on studying the pH effects on biologically relevant molecules.
 
 **[Computational Chemistry & Molecular Interactions Lab](https://ccmi.campus.ciencias.ulisboa.pt/)** - lead by **Paulo J. Costa** focuses on better understanding (bio)molecular recognition phenomena mediated by non-covalent interactions.
 
