@@ -12,8 +12,9 @@ Make sure you have the following installed:
 - **Jekyll** gem  
 
 You can install Bundler and Jekyll by running:
-
-`gem install bundler jekyll`
+```
+gem install bundler jekyll
+```
 
 # How to contribute
 As this is a colaborative wiki, we ask that you make sure to always push your code after you have made a change, to avoid creating forks and losing changes.
@@ -21,20 +22,25 @@ As this is a colaborative wiki, we ask that you make sure to always push your co
 ### Clone the Repository
 If you haven’t already, clone the repository:
 
-`git clone https://github.com/mms-fcul/mms-wiki.git`
-
-`cd mms-wiki`
-
+```
+git clone https://github.com/mms-fcul/mms-wiki.git
+cd mms-wiki
+```
 
 ### Install Dependencies
 Run Bundler to install all required gems:
 
-`bundle install`
+```
+bundle install
+```
 
 ### Getting the updated code
 If you already have a local clone of the repository, you can update it by running:
 
-`git pull origin main`
+```
+git pull origin main
+```
+
 
 Now you are updated and ready to make changes!
 
@@ -60,7 +66,9 @@ Example text
 ### Running Locally
 To test your changes locally, run the Jekyll server:
 
-`bundle exec jekyll serve`
+```
+bundle exec jekyll serve
+```
 
 Once running, open this URL in your browser: [http://localhost:4000/mms-wiki/](http://localhost:4000/mms-wiki/)
 
@@ -71,11 +79,11 @@ Once running, open this URL in your browser: [http://localhost:4000/mms-wiki/](h
 
 ### Committing and Pushing Changes
 
-`git add .`
-
-`git commit -m "Describe your changes here"`
-
-`git push origin main`
+```
+git add .
+git commit -m "Describe your changes here"
+git push origin main
+```
 
 The last command will prompt you to insert credentials, you must insert your personal username and password or token (you can generate a personal toke by going to Settings > Developer settings > Personal access tokens → Tokens (classic) > Generate new token → Generate new token (classic))
 
