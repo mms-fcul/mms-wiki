@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-
-<h1>Welcome to the MMS wiki ヾ(＾▽＾)ﾉ</h1>
+<div style="margin-top: 1em;">
+<h1>Welcome to the MMS wiki  ✌( ﾟヮﾟ) </h1>
+<div style="margin-top: 2em;">
 <h3>Choose a topic below or go into the <a href="{{ '/archive' | relative_url }}">Archive</a> for the site map:</h3>
 
 <ul>
@@ -12,10 +13,27 @@ layout: default
   <li><a href="{{ '/useful-info/' | relative_url }}">Useful information and commands</a></li>
 </ul>
 
-<h2>Pinned Pages</h2>
-<ul>
-  {%- assign pinned_pages = site.pages | where_exp:"page", "page.pinned == true" -%}
-  {%- for p in pinned_pages -%}
-    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-  {%- endfor -%}
-</ul>
+
+<div style="margin-top: 12em; display: flex; gap: 2em; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 250px;">
+    <h2>ᕕ( ﾟヮﾟ)ᕗ Notice Board</h2>
+    <ul>
+      {% assign pinned_posts = site.posts | where: "pinned", true | where: "category", "post" %}
+{% for post in pinned_posts %}
+      <div style="margin-bottom: 2em;">
+	<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+	<div>{{ post.content | markdownify }}</div>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+  <div style="flex: 1; min-width: 250px;">
+    <h2>Pinned Pages 👇( ｡ ‿ ｡ ) </h2>
+    <ul>
+      {% assign pinned_pages = site.pages | where: "pinned", true | where: "category", "page" %}
+      {% for page in pinned_pages %}
+        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
