@@ -13,6 +13,7 @@ When you first arrived you probably sat somewhere your supervisor told you to, b
 **When you leave always log-out of your account instead of turning off the computer**. The computers in the workspace are hard working at running simulations (some of which may even be yours), as such they should **NEVER** be turned off.
 
 <br>
+
 # The Air Conditioning unit
 Due to housing a lot of computers always running at high load, the workspace needs to be climatized (both for the pc's and for our sake). As such you should not play around with the settings of the AC. We try to make it as comfortable for everyone as we can, but depending on your seat's location you may find you need to bring a jacket even in the summer. We ask for your compreension regarding this matter.
 
