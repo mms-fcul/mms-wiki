@@ -27,6 +27,7 @@ These files need to travel back and forth between the two buildings for each fil
 /home ---> /tmp -----------------------------------------------------> /home
 bio000 --> bio161 ---------------------------------------------------> bio000
 reading -> processing -> writting reading -> processing -> writting -> copying
-gro -------------------------> aux1 ---------------------> traj 
+gro -------------------------> aux1 ---------------------> traj
+               5                               1                          1 min
 ```
 By performing all the calculations on the `/tmp` disk and only copying at the end we save a lot of time otherwise spend reading and writting files over ethernet. This has such a big impact that **total analysis time can be reduced from 2 to 10 times**.
