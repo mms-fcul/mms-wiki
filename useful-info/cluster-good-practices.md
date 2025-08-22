@@ -21,7 +21,7 @@ If you perform this analysis in bio161 (for example) the path the files will tak
 bio000 --> bio161 ----------> bio000 ------> bio161 -----> bio000
 reading -> processing -> writting reading -> processing -> writting
 gro -------------------------> aux1 ---------------------> traj
-              5                                5
+              5                                5 min
 ```
 These files need to travel back and forth between the two buildings for each file that is read and written. In this example that makes up a total of four trips. Now let's consider an alternative protocol where we instead use the local /tmp disk as a scratch disk instead of /home:
 ```
