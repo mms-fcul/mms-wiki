@@ -4,7 +4,7 @@ title: Machuqueiro Lab Website News
 permalink: /useful-info/machuque_lab_website_news/
 ---
 
-If you are part of the Machuqueiro Lab then you probably already heard about the "News Section" in the website, where we never have enough contributions to keep the news... new and up to date. This page exists in an attempt to change that!
+If you are part of the Machuqueiro Lab then you probably already heard about the "[News Section](https://mms.rd.ciencias.ulisboa.pt/news.html)" in the website, where we never have enough contributions to keep the news... new and up to date. This page exists in an attempt to change that!
 
 Thanks to João Vitorino, the process of creating a news entry in the website is now as simple as filling out a google forms (which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSdbwW2wleGPBeKBhi-sREHJo6Gn2EffvOeTDDfzZL1oze-a1A/viewform?pli=1)). 
 
