@@ -8,7 +8,7 @@ If you are part of the Machuqueiro Lab then you probably already heard about the
 
 Thanks to João Vitorino, the process of creating a news entry in the website is now as simple as filling out a google forms (which can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSdbwW2wleGPBeKBhi-sREHJo6Gn2EffvOeTDDfzZL1oze-a1A/viewform?pli=1)). 
 
-You will always need a couple of things, with a few fields being optional:
+You will always need a couple of things, with a few other fields being optional:
 ## 1. Title
 A short and catchy title to entice lurkers to click.
 
