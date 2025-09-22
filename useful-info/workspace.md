@@ -17,4 +17,4 @@ When you first arrived you probably sat somewhere your supervisor told you to, b
 # The Air Conditioning unit
 Due to housing a lot of computers always running at high load, the workspace needs to be climatized (both for the pc's and for our sake). As such you should not play around with the settings of the AC. We try to make it as comfortable for everyone as we can, but depending on your seat's location you may find you need to bring a jacket even in the summer. We ask for your compreension regarding this matter.
 
-If for some reason you do need to change the AC settings, you can find instructions on how to adjust it AC [here]({{ '/useful-info/AC/' | relative_url }}).
+If for some reason you do need to change the AC settings, you can find instructions on how to adjust it AC [here]({{ '/useful-info/AC.html' | relative_url }}).
