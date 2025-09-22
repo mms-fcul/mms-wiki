@@ -9,7 +9,7 @@ Don't be intimidated by that daunting title, all this means is we use the comput
 
 This page will guide through the resources we have available (like tutorials and manuals) for you to get started. Feel free to use it to guide your learning and don't hesitate to ask other people in the workspace for help if there's anything you don't understand (we don't bite ~~that hard~~).
 
-Let's start exactly with the [workspace]({{ '../useful-info/workspace/' | relative_url }}), the place you are likely reading this from. This is a shared space and as such there are basic etiquette rules, as well as more tecnicall details you should be aware of. You can find more about it [here]({{ '../useful-info/workspace/' | relative_url }}). With that out of the way let's get learning.
+Let's start exactly with the [workspace]({{ '/useful-info/workspace.html' | relative_url }}), the place you are likely reading this from. This is a shared space and as such there are basic etiquette rules, as well as more tecnicall details you should be aware of. You can find more about it [here]({{ '/useful-info/workspace.html' | relative_url }}). With that out of the way let's get learning.
 
 We have roughly divided the topics into three categories, with increasing technical and theoretical complexity, however feel free to skip around as you need. Everyone's project is different and you can always come back later if you missed something.
 
