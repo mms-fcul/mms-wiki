@@ -13,7 +13,7 @@ It means you can create almost anything you can imagine in **2D or 3D** — from
 In our scientific area, Blender is often used for creating **publication-quality images** and **movies** to communicate results clearly.
 
 ## Oh wow, that's pretty cool. How do I start?
-Check out our [Blender tutorial page](/tutorials/blender/) for a simple hands-on introduction.  
+Check out our [Blender tutorial page](/tutorials/blender-tutorial.md) for a simple hands-on introduction.  
 You can also explore official resources like the [Blender Beginner Tutorials](https://www.blender.org/support/tutorials/).
 
 ## Other Useful Information
