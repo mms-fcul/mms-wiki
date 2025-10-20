@@ -8,15 +8,15 @@ permalink: /programs-and-tools/blender/
 [Blender](https://www.blender.org/) is a free and open-source 3D creation suite.  
 It supports the **entire 3D pipeline**, including modeling, rigging, animation, simulation, rendering, compositing, and video editing.
 
-## Okay, what does that mean for me?
+# Okay, what does that mean for me?
 It means you can create almost anything you can imagine in **2D or 3D** — from illustrations and animations to physics-based simulations.  
 In our scientific area, Blender is often used for creating **publication-quality images** and **movies** to communicate results clearly.
 
-## Oh wow, that's pretty cool. How do I start?
+# Oh wow, that's pretty cool. How do I start?
 Check out our [Blender tutorial page](/tutorials/blender-tutorial.md) for a simple hands-on introduction.  
 You can also explore official resources like the [Blender Beginner Tutorials](https://www.blender.org/support/tutorials/).
 
-## Other Useful Information
+# Other Useful Information
 ### Where to download?
 You can download Blender for free from the [official website](https://www.blender.org/download/).  
 It’s available for **Windows, macOS, and Linux**.
