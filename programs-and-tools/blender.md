@@ -16,7 +16,7 @@ In our scientific area, Blender is often used for creating **publication-quality
 Check out our [Blender tutorial page](/tutorials/blender-tutorial.md) for a simple hands-on introduction.  
 You can also explore official resources like the [Blender Beginner Tutorials](https://www.blender.org/support/tutorials/).
 
-# Other Useful Information
+## Other Useful Information
 ### Where to download?
 You can download Blender for free from the [official website](https://www.blender.org/download/).  
 It’s available for **Windows, macOS, and Linux**.
