@@ -31,4 +31,4 @@ Here you'll find an overview of the key software, tools, and platforms used with
 ---
 
 
-[⬅ Back to Home](/mms-wiki/index.md)
+[⬅ Back to Home](/mms-wiki)
