@@ -3,14 +3,13 @@ title: Programs and Tools
 layout: page
 ---
 
-# 🧰 Programs and Tools
+# Programs and Tools
 
 Welcome to the **Programs and Tools** section of MMS.  
 Here you'll find an overview of the key software, tools, and platforms used within our workflows — what they are, why we use them, and how to get started with each one.
 
 ---
 
-## 🔗 Explore the Tools
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
 
