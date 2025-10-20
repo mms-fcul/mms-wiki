@@ -30,4 +30,4 @@ It’s available for **Windows, macOS, and Linux**.
 ---
 
 
-[⬅ Back to Programs and Tools](/programs-and-tools/index.md)
+[⬅ Back to Programs and Tools](/mms-wiki/programs-and-tools)
