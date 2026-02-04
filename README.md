@@ -1,6 +1,6 @@
 # MMS Wiki - Contributor Guide
 
-Welcome! This document helps you set up and contribute to the MMS Wiki website.
+Welcome! This document helps you set up and contribute to the [MMS Wiki website](https://mms-fcul.github.io/mms-wiki/).
 
 ---
 # Pre-requisites
