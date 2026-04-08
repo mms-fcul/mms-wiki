@@ -8,21 +8,21 @@ This section documents the group workflow for molecular dynamics simulations wit
 
 The workflow is divided into three main stages:
 
-1. [System preparation and minimization]({{ site.baseurl }}/programs-and-tools/md-info/md-system-preparation-and-minimization/)
-2. [Initialization and equilibration]({{ site.baseurl }}/programs-and-tools/md-info/md-initialization-and-equilibration/)
-3. [Production workflow]({{ site.baseurl }}/programs-and-tools/md-info/md-production-workflow/)
+1. [System preparation and minimization](/programs-and-tools/md-info/md-system-preparation-and-minimization/)
+2. [Initialization and equilibration](/programs-and-tools/md-info/md-initialization-and-equilibration/)
+3. [Production workflow](/programs-and-tools/md-info/md-production-workflow/)
 
 ## Script files
 
 A shareable version of the workflow scripts is available in:
 
-- [`programs-and-tools/md-info/scripts/`]({{ site.baseurl }}/programs-and-tools/md-info/scripts/)
+- [`programs-and-tools/md-info/scripts/`](/programs-and-tools/md-info/scripts/)
 
 The scripts are organized by stage:
 
-- [`01_box-min`]({{ site.baseurl }}/programs-and-tools/md-info/scripts/01_box-min/)
-- [`02_initial`]({{ site.baseurl }}/programs-and-tools/md-info/scripts/02_initial/)
-- [`03_MD`]({{ site.baseurl }}/programs-and-tools/md-info/scripts/03_MD/)
+- [`01_box-min`](/programs-and-tools/md-info/scripts/01_box-min/)
+- [`02_initial`](/programs-and-tools/md-info/scripts/02_initial/)
+- [`03_MD`](/programs-and-tools/md-info/scripts/03_MD/)
 
 ## Scope and purpose
 
