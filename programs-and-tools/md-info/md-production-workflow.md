@@ -19,12 +19,6 @@ Each block is typically 10 ns, although the last one may be shorter depending on
 
 This design makes production runs easier to manage under Slurm walltime limits while preserving continuity through checkpointing.
 
-## Script files
-
-The files used in this stage are available here:
-
-- [`scripts/03_MD/`](/mms-wiki/programs-and-tools/md-info/scripts/03_MD/)
-
 ## Main files
 
 - [`01_production.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/01_production.mdp)
