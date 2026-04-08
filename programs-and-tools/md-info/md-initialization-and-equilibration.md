@@ -20,26 +20,26 @@ For many simpler systems, a much shorter protocol is often enough, such as:
 
 ## Files used in this stage
 
-- `00_sub2slurm.sh`
-- `01_init.sh`
-- `init1.mdp`
-- `init2.mdp`
-- `init3.mdp`
-- `init4.mdp`
-- `init5.mdp`
-- `init6.mdp`
+- [`00_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/00_sub2slurm.sh)
+- [`01_init.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/01_init.sh)
+- [`init1.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init1.mdp)
+- [`init2.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init2.mdp)
+- [`init3.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init3.mdp)
+- [`init4.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init4.mdp)
+- [`init5.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init5.mdp)
+- [`init6.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init6.mdp)
 
 ## Script files
 
 The files used in this stage are available here:
 
-- [scripts/02_initial/](/mms-wiki/programs-and-tools/md-info/scripts/02_initial/)
+- [`scripts/02_initial/`](/mms-wiki/programs-and-tools/md-info/scripts/02_initial/)
 
 Main files:
 
-- `00_sub2slurm.sh`
-- `01_init.sh`
-- `init1.mdp` to `init6.mdp`
+- [`00_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/00_sub2slurm.sh)
+- [`01_init.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/01_init.sh)
+- [`init1.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init1.mdp) to [`init6.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/init6.mdp)
 
 ## General workflow
 
@@ -54,7 +54,7 @@ The workflow supports:
 - clean stopping with `-maxh`
 - automatic resubmission through Slurm when a run stops cleanly
 
-## `01_init.sh`
+## [`01_init.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/01_init.sh)
 
 This is the main initialization driver.
 
@@ -65,18 +65,18 @@ Its logic is:
 3. run `grompp` only when needed
 4. run `mdrun` with checkpointing
 5. if a checkpointed clean stop happens due to walltime, exit with code `10`
-6. allow the Slurm wrapper to resubmit the job
+6. allow the [`00_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/00_sub2slurm.sh) Slurm wrapper to resubmit the job
 
 When sharing or reusing this script, make sure the stage loop includes the full intended list of initialization stages and does not contain any temporary test-only restriction.
 
-## `00_sub2slurm.sh`
+## [`00_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/00_sub2slurm.sh)
 
 This is the Slurm submission wrapper for the initialization stage.
 
 Its role is to:
 
 - generate the Slurm submission script
-- launch `01_init.sh`
+- launch [`01_init.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/02_initial/01_init.sh)
 - interpret the exit code
 - automatically resubmit when the run stopped cleanly due to walltime
 
@@ -98,4 +98,4 @@ In the original ASIC membrane case, this stage was deliberately more elaborate t
 
 ## Output of this stage
 
-At the end of initialization, the system should be stable enough to begin production MD from the final initialization structure.
+At the end of initialization, the system should be stable enough to begin the [production workflow](/mms-wiki/programs-and-tools/md-info/md-production-workflow/) from the final initialization structure.

@@ -27,16 +27,16 @@ The files used in this stage are available here:
 
 ## Main files
 
-- `01_production.mdp`
-- `02_runMD.sh`
-- `00_tools/02.1_MD.conf`
-- `00_tools/02.2_sub2slurm.sh`
+- [`01_production.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/01_production.mdp)
+- [`02_runMD.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/02_runMD.sh)
+- [`00_tools/02.1_MD.conf`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.1_MD.conf)
+- [`00_tools/02.2_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.2_sub2slurm.sh)
 
 ## Main design features
 
 The production workflow includes:
 
-- automatic derivation of total simulation length from the production `.mdp`
+- automatic derivation of total simulation length from the [`01_production.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/01_production.mdp)
 - block-by-block execution
 - checkpoint continuation within a block
 - clean restart with `-cpi ... -append`
@@ -86,7 +86,7 @@ The workflow can optionally compress selected block outputs, but only after the 
 
 This is intended to reduce storage usage without interfering with active restarts.
 
-A sensible default policy is:
+A sensible default policy is defined in [`00_tools/02.1_MD.conf`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.1_MD.conf):
 
 - compress `.log`
 - compress `.tpr`
@@ -109,6 +109,8 @@ Before adapting the workflow to another system, users should review:
 - scratch policy
 - compression policy
 
+The main user-editable settings are concentrated in [`00_tools/02.1_MD.conf`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.1_MD.conf), while submission behavior is controlled by [`00_tools/02.2_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.2_sub2slurm.sh), and the main execution logic lives in [`02_runMD.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/02_runMD.sh).
+
 ## Best practices
 
 Recommended good practices include:
@@ -122,7 +124,7 @@ Recommended good practices include:
 
 ## Summary
 
-The most reusable part of the workflow is the production logic:
+The most reusable part of the workflow is the production logic implemented through [`02_runMD.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/02_runMD.sh), [`00_tools/02.1_MD.conf`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.1_MD.conf), and [`00_tools/02.2_sub2slurm.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/03_MD/00_tools/02.2_sub2slurm.sh):
 
 - split long production into blocks
 - checkpoint regularly

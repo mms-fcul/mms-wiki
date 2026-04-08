@@ -22,12 +22,12 @@ For the original ASIC membrane workflow, the starting point was a CHARMM-GUI mem
 
 ## Files used in this stage
 
-- `01_prepare-system.sh`
-- `02_run-pdb2gmx.sh`
-- `03_index.sh`
-- `04_min.sh`
-- `min1.mdp`
-- `min2.mdp`
+- [`01_prepare-system.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/01_prepare-system.sh)
+- [`02_run-pdb2gmx.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/02_run-pdb2gmx.sh)
+- [`03_index.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/03_index.sh)
+- [`04_min.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/04_min.sh)
+- [`min1.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min1.mdp)
+- [`min2.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min2.mdp)
 
 ## Script files
 
@@ -36,18 +36,19 @@ The files used in this stage are available here:
 - [`scripts/01_box-min/`](/mms-wiki/programs-and-tools/md-info/scripts/01_box-min/)
 
 Main files:
-- `01_prepare-system.sh`
-- `02_run-pdb2gmx.sh`
-- `03_index.sh`
-- `04_min.sh`
-- `min1.mdp`
-- `min2.mdp`
+
+- [`01_prepare-system.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/01_prepare-system.sh)
+- [`02_run-pdb2gmx.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/02_run-pdb2gmx.sh)
+- [`03_index.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/03_index.sh)
+- [`04_min.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/04_min.sh)
+- [`min1.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min1.mdp)
+- [`min2.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min2.mdp)
 
 ## What each script does
 
-### `01_prepare-system.sh`
+### [`01_prepare-system.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/01_prepare-system.sh)
 
-This script prepares the protein PDB that will later be used by `pdb2gmx`.
+This script prepares the protein PDB that will later be used by [`02_run-pdb2gmx.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/02_run-pdb2gmx.sh).
 
 Its role is to:
 
@@ -59,7 +60,7 @@ Its role is to:
 
 Because this logic depends strongly on the structure and naming conventions of the original input, users should inspect and adapt this script carefully when applying it to a different system.
 
-### `02_run-pdb2gmx.sh`
+### [`02_run-pdb2gmx.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/02_run-pdb2gmx.sh)
 
 This script runs `gmx pdb2gmx` inside the container to generate a protein topology and structure compatible with the chosen force field.
 
@@ -70,7 +71,7 @@ It then merges the rebuilt protein coordinates with the membrane/solvent coordin
 
 This step also includes topology edits to ensure that membrane, solvent, and ion naming match the chosen force-field setup.
 
-### `03_index.sh`
+### [`03_index.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/03_index.sh)
 
 This script generates the index file used in later stages.
 
@@ -84,7 +85,7 @@ Typical groups created here include:
 
 These groups are important for restrained equilibration, coupling choices, and analysis.
 
-### `04_min.sh`
+### [`04_min.sh`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/04_min.sh)
 
 This script runs a two-step minimization protocol.
 
@@ -93,7 +94,7 @@ In the original workflow:
 - the first minimization starts from the assembled system
 - the second minimization starts from the output of the first
 
-The exact details are controlled by the `min1.mdp` and `min2.mdp` files.
+The exact details are controlled by [`min1.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min1.mdp) and [`min2.mdp`](https://github.com/mms-fcul/mms-wiki/blob/main/programs-and-tools/md-info/scripts/01_box-min/min2.mdp).
 
 ## Typical order of execution
 
@@ -126,4 +127,4 @@ At the end of this stage, the user should have:
 - an index file
 - minimized coordinates
 
-These files serve as the input for the initialization/equilibration stage.
+These files serve as the input for the [initialization/equilibration](/mms-wiki/programs-and-tools/md-info/md-initialization-and-equilibration/) stage.
