@@ -14,10 +14,6 @@ The workflow is divided into three main stages:
 
 ## Script files
 
-A shareable version of the workflow scripts is available in:
-
-- [Scripts overview](/mms-wiki/programs-and-tools/md-info/scripts/)
-
 The scripts are organized by stage:
 
 - [01_box-min](/mms-wiki/programs-and-tools/md-info/scripts/01_box-min/)

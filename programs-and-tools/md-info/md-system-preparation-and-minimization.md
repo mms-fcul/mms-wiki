@@ -32,7 +32,7 @@ For the original ASIC membrane workflow, the starting point was a CHARMM-GUI mem
 
 The files used in this stage are available here:
 
-- [`scripts/01_box-min/`](./scripts/01_box-min/)
+- [`scripts/01_box-min/`](/mms-wiki/programs-and-tools/md-info/scripts/01_box-min/)
 
 Main files:
 - `01_prepare-system.sh`

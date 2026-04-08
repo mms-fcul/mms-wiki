@@ -22,7 +22,7 @@ This design makes production runs easier to manage under Slurm walltime limits w
 
 The files used in this stage are available here:
 
-- [`scripts/03_MD/`](./scripts/03_MD/)
+- [`scripts/03_MD/`](/mms-wiki/programs-and-tools/md-info/scripts/03_MD/)
 
 ## Main files
 
