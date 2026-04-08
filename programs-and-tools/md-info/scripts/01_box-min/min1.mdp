@@ -1,0 +1,44 @@
+;
+;       User your_name
+;
+;       Generic Input file
+;
+title               =  CpH-MD run
+cpp                 =  /lib/cpp
+define              =
+
+integrator          =  steep
+emtol               =  0.0
+emstep              =  0.001
+nstcgsteep          = 1000
+nsteps              = 10000
+nstxout             =  0
+nstvout             =  0
+nstfout             =  0
+nstlog              =  0
+
+pbc                 = xyz
+
+cutoff-scheme       = verlet
+ns_type             = grid
+coulombtype         = PME
+nstlist             = 5
+rlist               = 1.0
+rcoulomb            = 1.0
+rvdw                = 1.0
+rvdw-switch         = 1.0       ; not in GROMOS
+vdw-modifier        = Potential-shift-Verlet   ; Amber specific
+fourierspacing      = 0.125     ; grid spacing for FFT (rvdw/8)
+DispCorr            = EnerPres  ; account for cut-off vdW scheme
+
+vdwtype             = cut-off
+
+energygrps          =  System
+
+gen_vel             =  no
+
+constraint_algorithm=lincs
+lincs_order         =  8
+lincs-warnangle     =  90
+;constraints         =  all-bonds
+constraints         =  none

@@ -1,0 +1,60 @@
+;
+;       ASIC membrane init - Stage 2/3
+;       NPT semi-isotropic (C-rescale), 200 ps @ 1 fs
+;
+define                 = -DPOSRES_ASIC_CA_1000
+
+integrator             =  md
+tinit                  =  0.0
+dt                     =  0.002    ; ps
+nsteps                 =  10000000 ; 20 ns (20000 ps)
+
+nstcalcenergy          =  5
+nstcomm                =  5
+nstxout-compressed     =  10000
+compressed-x-precision =  1000
+nstxout                =  0
+nstvout                =  0
+nstfout                =  0
+nstlog                 =  10000
+nstenergy              =  10000
+nstpcouple             =  200
+
+cutoff-scheme          =  Verlet
+
+coulombtype            =  PME
+nstlist                =  20
+vdwtype                =  cut-off
+rlist                  =  1.0
+rcoulomb               =  1.0
+rvdw                   =  1.0
+rvdw-switch            =  1.0                     ; not in GROMOS 
+vdw-modifier           =  Potential-shift-Verlet  ; Amber specific
+fourierspacing         =  0.125                   ; grid spacing for FFT (rvdw/8)
+
+; Temperature coupling (two groups)
+tcoupl                 =  v-rescale
+tc-grps                =  Solute SOL
+tau-t                  =  1      1 
+ref-t                  =  310.15 310.15
+
+; Semi-isotropic pressure coupling (Berendsen)
+pcoupl                 =  C-rescale
+pcoupltype             =  semiisotropic
+tau-p                  =  2.0
+compressibility        =  4.5e-5 4.5e-5
+ref-p                  =  1.0    1.0
+refcoord_scaling       =  com
+
+DispCorr               =  EnerPres  ; account for cut-off vdW scheme (Amber)
+
+; Continue from previous: DO NOT generate velocities
+continuation           =  yes
+gen-vel                =  no
+
+; Constraints
+constraint_algorithm   =  lincs
+lincs_order            =  8
+constraints            =  h-bonds
+lincs-warnangle        =  90
+

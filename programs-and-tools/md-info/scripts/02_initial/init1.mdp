@@ -1,0 +1,61 @@
+;
+;       User your_name
+;       
+;       ASIC membrane init - Stage 1/3
+;       NVT (v-rescale), 100 ps @ 1 fs
+;
+define                 = -DPOSRES -DPOSRES_POPC
+
+integrator             =  md
+tinit                  =  0.0
+dt                     =  0.001    ; ps
+nsteps                 =  30000    ; 30 ps
+
+nstcalcenergy          =  5
+nstcomm                =  5
+nstxout-compressed     =  20000
+compressed-x-precision =  1000
+nstxout                =  0
+nstvout                =  0
+nstfout                =  0
+nstlog                 =  5000
+nstenergy              =  5000
+
+cutoff-scheme          =  Verlet
+
+coulombtype            =  PME
+nstlist                =  20
+vdwtype                =  cut-off
+rlist                  =  1.0
+rcoulomb               =  1.0
+rvdw                   =  1.0
+rvdw-switch            =  1.0                     ; not in GROMOS 
+vdw-modifier           =  Potential-shift-Verlet  ; Amber specific
+fourierspacing         =  0.125                   ; grid spacing for FFT (rvdw/8)
+
+; Temperature coupling (two groups)
+tcoupl                 =  v-rescale
+tc-grps                =  Solute SOL
+tau-t                  =  0.5     0.5 
+ref-t                  =  310.15 310.15
+
+; Pressure coupling OFF (NVT)
+pcoupl                 =  no
+pcoupltype             =  semiisotropic
+tau-p                  =  5.0
+compressibility        =  4.5e-5 4.5e-5
+ref-p                  =  1.0    1.0
+
+DispCorr               =  EnerPres  ; account for cut-off vdW scheme (Amber)
+
+; Generate velocities ON only in Stage 1
+gen-vel                =  yes
+gen-temp               =  310.15
+gen-seed               =  -1
+
+; Constraints
+constraint_algorithm   =  lincs
+lincs_order            =  8
+constraints            =  h-bonds
+lincs-warnangle        =  90
+
