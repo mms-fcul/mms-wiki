@@ -138,6 +138,9 @@ and focus on **safe, conservative data reduction**.
 
 - Temporary or intermediate files
 - Backup files (`#file#`, `file~`)
+```bash
+find . -type f \( -name '*.tmp' -o -name 'tmp*' -o -name 'TMP*' -o -name '*~' -o -name '#*' \) -delete
+```
 - Equilibration trajectories
 - Duplicate trajectory formats
 - Failed or test runs
