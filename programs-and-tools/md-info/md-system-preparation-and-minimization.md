@@ -2,6 +2,7 @@
 layout: page
 title: MD - System Preparation and Minimization
 pinned: false
+permalink: /programs-and-tools/md-info/md-system-preparation-and-minimization/
 ---
 
 This page describes the first stage of the molecular dynamics workflow: preparing a simulation-ready system and minimizing it before equilibration.

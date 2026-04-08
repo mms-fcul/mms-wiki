@@ -2,6 +2,7 @@
 layout: page
 title: MD - Production Workflow
 pinned: false
+permalink: /programs-and-tools/md-info/md-production-workflow/
 ---
 
 This page describes the production MD workflow used in the group.

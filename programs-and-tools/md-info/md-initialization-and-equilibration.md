@@ -2,6 +2,7 @@
 layout: page
 title: MD - Initialization and Equilibration
 pinned: false
+permalink: /programs-and-tools/md-info/md-initialization-and-equilibration/
 ---
 
 This page describes the initialization stage of the molecular dynamics workflow.

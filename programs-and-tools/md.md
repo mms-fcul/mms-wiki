@@ -2,6 +2,7 @@
 layout: page
 title: Molecular Dynamics
 pinned: false
+permalink: /programs-and-tools/md/
 ---
 
 This section documents the group workflow for molecular dynamics simulations with GROMACS on HPC systems, using containerized execution through Apptainer/Singularity and Slurm-based scheduling.
